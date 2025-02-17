@@ -2,7 +2,7 @@ import cv2
 
 from ultralytics import solutions
 
-video_path = r'C:\Users\casca\PycharmProjects\caroverspeed\busy cars.mp4'
+video_path = r'/busy_cars.mp4'
 cap = cv2.VideoCapture(video_path)
 assert cap.isOpened(), "Error reading video file"
 w, h, fps = (int(cap.get(x)) for x in (cv2.CAP_PROP_FRAME_WIDTH, cv2.CAP_PROP_FRAME_HEIGHT, cv2.CAP_PROP_FPS))
